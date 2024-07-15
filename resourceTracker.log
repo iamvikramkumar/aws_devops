@@ -1,0 +1,43 @@
+AWS Resource Usage Report - Mon Jul 15 14:03:01 UTC 2024
+-----------------------------------
+
+Print list of S3 buckets:
+
+
+-----------------------------------
+
+Print list of EC2 instances:
+
+[
+    [
+        [
+            "i-0639c91ded37cdd87",
+            "t2.micro",
+            "running",
+            "13.54.45.18"
+        ]
+    ]
+]
+
+-----------------------------------
+
+Print list of Lambda functions:
+
+[]
+
+-----------------------------------
+
+Print list of IAM Users with specific attributes:
+
+[
+    [
+        "ansible-user",
+        "AIDAXYKJXM3CBBTC3GLLB",
+        "2024-07-02T10:30:30+00:00",
+        null
+    ]
+]
+
+-----------------------------------
+
+End of report
