@@ -1,15 +1,20 @@
-How can you make sure that a certain script running   everyday x and y timestamp. 
+# AWS Resource Usage Script with Cron Job
+
+## How to Ensure a Script Runs Every Day at a Specific Time
+
+You can use a cron job to execute a script every day at a given point in time.
+
+### Step-by-Step Guide
+
+#### 1. Create the Script File
+
+Create a file named `aws_resource_usage.sh`:
+```
+vim aws_resource_usage.sh
+```
 
 
-CRON JOB
-
-Using Cronjob we can execute this script every day at given point of time.
-
-
-Create a file with the name of "aws_resource_usage.sh"
-
---> vim aws_resource_usage.sh
-
+```
 #!/bin/bash
 ########
 # Author: Vikram
@@ -58,8 +63,10 @@ aws iam list-users --query 'Users[*].[UserName,UserId,CreateDate,PasswordLastUse
 echo -e "\n-----------------------------------\n" | tee -a $output_file
 echo "End of report" | tee -a $output_file
 
+```
 
-Save above file --> Press ESC Key then :wq
+Save the file by pressing ESC and then :wq.
+
 
 Note: Before execute the script give the permission and make it executable using chmod command
 
