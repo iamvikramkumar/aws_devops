@@ -68,28 +68,31 @@ echo "End of report" | tee -a $output_file
 Save the file by pressing ESC and then :wq.
 
 
-Note: Before execute the script give the permission and make it executable using chmod command
+#### 2. Make the Script Executable
+Before executing the script, make it executable using the chmod command:
+```
+chmod +x aws_resource_usage.sh
+```
 
-Now make the aws_resource_usage.sh executable
---> chmod +x aws_resource_usage.sh
+#### 3. Run the Script 
+To generate the output, run the script:
+```
+./aws_resource_usage.sh
+```
 
-Hit the below cmd to generate the output 
---> ./aws_resource_usage.sh
-
-Setting Up Crontab:
-
-	1. Make the Script Executable:
-        chmod +x aws_resource_usage.sh
-
-	2. Edit Crontab:
-	crontab -e
-	
-	3. Add the Crontab Entry:
-	0 20 * * * /home/ubuntu/aws_resource_usage.sh
-	
-	4. Verify Crontab Entry:
-	Crontab -l
-	
+## Setting Up Crontab:
+#### 1. Edit Crontab:
+```
+crontab -e
+```	
+#### 2. Add the Crontab Entry:
+```
+0 20 * * * /home/ubuntu/aws_resource_usage.sh
+```
+#### 3. Verify Crontab Entry:
+```
+crontab -l
+```	
 	
 
 Breakdown of the Crontab Entry:
