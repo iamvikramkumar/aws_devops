@@ -94,26 +94,37 @@ crontab -e
 crontab -l
 ```	
 	
+## Breakdown of the Crontab Entry:
+`0 20 * * *` --> This is the scheduling part of the cron job.
+- `0` --> The minute field. The script will run at the 0th minute of the hour.
+- `20` --> The hour field. The script will run at the 20th hour (8 PM) of the day.
+- `*` --> The day of the month field. The script will run every day of the month.
+- `*` --> The month field. The script will run every month.
+- `*` --> The day of the week field. The script will run every day of the week.
 
-Breakdown of the Crontab Entry:
-	• 0 20 * * * --> This is the scheduling part of the cron job.
-		a. 0 --> The minute field. The script will run at the 0th minute of the hour.
-		b. 20 --> The hour field. The script will run at the 20th hour (8 PM) of the day.
-		c. * --> The day of the month field. The script will run every day of the month.
-		d. * --> The month field. The script will run every month.
-		e. * --> The day of the week field. The script will run every day of the week.
-
-What this means:
-	• The script will run every day.
-	• It will run at 8:00 PM (20:00) server time.
-
-
-How Crontab Works:
-	• Crontab is a Unix utility that allows tasks to be automatically run in the background at specified times and intervals.
-	• Each line in a crontab file represents a job, and consists of time and date fields, and the command to be executed.
+## What this means:
+- The script will run every day.
+- It will run at 8:00 PM (20:00) server time.
 
 
-Note: Before executing script you should have these prerequisite. 
-	1. INSTALLED AWS CLI
-	2. AWS CONIFGURE 
-![Uploading image.png…]()
+## How Crontab Works:
+- Crontab is a Unix utility that allows tasks to be automatically run in the background at specified times and intervals.
+- Each line in a crontab file represents a job, and consists of time and date fields, and the command to be executed.
+
+
+## Credits
+
+Special thanks to [Abhishek Veeramalla](https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa) for the helpful resources and tutorials.
+
+
+### Thanks For Watch This Repositories!
+
+### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"><i>KEEP AWESOME & STAY COOL!</i><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30">
+
+### Feel Free To Fork And Report If You Find Any Issue :)
+
+![Star Badge](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99)
+[![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/iamvikramkumar?tab=repositories)
+[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/iamvikramkumar)
+
+
